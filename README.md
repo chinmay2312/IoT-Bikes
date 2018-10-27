@@ -8,11 +8,12 @@ It can also help people in maintaining a healthy lifestyle by taking up bicycles
 
 # What it does<br>
 Dragonboard keeps track of the location of the bicycle.
-Arduino looks after it's security.
+Arduino looks after it's security and weather data collected from bikes.
 Together these two devices help in creating a solution which makes bicycles available to everyone free of charge.
-
+Machine learing analytics of sensors data in GCP
 # How we built it<br>
-We have used Dragon Board and Arduino to receive the sensors data.
+Arduino is interfaced with the sensors to help collect data from the bikes or their docks (or both).This will help detect if someone is throwing bike in water then humidity will increase.If someone tries breaking the bike or takes it to a rugged location then we use vibration sensor.Also placing these devices on the dock can help us determine the weather data of that location then we know that more bikes are needed at the spot based on analytics.
+We have used Dragon Board.
 The GPS data is transmitted from the dragonboard to Google Cloud Platform(GCP) and stored on Firebase.
 A Twilio API sends the SMS if the readings of the sensors goes beyond a threshold.
 A Debian OS is mounted on the Dragonboard.
@@ -42,3 +43,15 @@ express.js
 fitbit
 twilio
 python
+
+# Interfacing instruction with Arduino Uno/101
+Set Baud rate to 9600
+Connect the A0 with the light sensor
+Interface the A1 with temperature/humidity sensor
+Connect the A2 with buzzer
+connect A3 with temperature sensor(for fire detection)
+Connect the A4 with vibration sensor
+### Please note: Even if you don't connect all these sensors the code will still be downloaded and the available sensors will function as expected.
+# Future work
+To make these devices run on Battery which lasts for a couple of years atleast.
+
