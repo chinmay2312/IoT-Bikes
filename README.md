@@ -44,13 +44,13 @@ fitbit
 twilio
 python
 
-# Interfacing instruction with Arduino Uno/101
-Set Baud rate to 9600
-Connect the A0 with the light sensor
-Interface the A1 with temperature/humidity sensor
-Connect the A2 with buzzer
-connect A3 with temperature sensor(for fire detection)
-Connect the A4 with vibration sensor
+# Interfacing instruction with Arduino Uno/101<br/>
+Set Baud rate to 9600 <br/>
+Connect the A0 with the light sensor <br/>
+Interface the A1 with temperature/humidity sensor<br/>
+Connect the A2 with buzzer<br/>
+connect A3 with temperature sensor(for fire detection)<br/>
+Connect the A4 with vibration sensor<br/>
 ### Please note: Even if you don't connect all these sensors the code will still be downloaded and the available sensors will function as expected.
 # Future work
 To make these devices run on Battery which lasts for a couple of years atleast.
