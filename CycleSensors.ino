@@ -85,7 +85,7 @@ void loop(){
     Serial.print("temperature = ");
     Serial.print(DHT.temperature); 
     Serial.println("C  ");
-    int sensorValue = analogRead(A0);//read the vibration
+    int sensorValue = analogRead(A4);//read the vibration
     Serial.println(sensorValue);//print it
    delay(1000);
    if(sensorValue==1023)//if you have an led it will turn on or off based on the vibration
