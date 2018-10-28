@@ -12,14 +12,14 @@ Arduino looks after it's security and weather data collected from bikes.
 Together these two devices help in creating a solution which makes bicycles available to everyone free of charge.
 Machine learing analytics of sensors data in GCP
 # How we built it<br>
-Arduino is interfaced with the sensors to help collect data from the bikes or their docks (or both).This will help detect if someone is throwing bike in water then humidity will increase.If someone tries breaking the bike or takes it to a rugged location then we use vibration sensor.Also placing these devices on the dock can help us determine the weather data of that location then we know that more bikes are needed at the spot based on analytics.
-We have used Dragon Board.
-The GPS data is transmitted from the dragonboard to Google Cloud Platform(GCP) and stored on Firebase.
-A Twilio API sends the SMS if the readings of the sensors goes beyond a threshold.
-A Debian OS is mounted on the Dragonboard.
-A Node.js application receives the location data from a python API and sends it to Google Cloud Platform.
-The sensors on Arduino are present to detect any damages done to the box( mounted on bike and the dragonboard is present inside this box.
-For specific merchant analysis we also use the data from https://www.divvybikes.com/system-data along with our sensors data.
+Arduino is interfaced with the sensors to help collect data from the bikes or their docks (or both).This will help detect if someone is throwing bike in water then humidity will increase.If someone tries breaking the bike or takes it to a rugged location then we use vibration sensor.Also placing these devices on the dock can help us determine the weather data of that location then we know that more bikes are needed at the spot based on analytics.<br/>
+We have used Dragon Board.<br/>
+The GPS data is transmitted from the dragonboard to Google Cloud Platform(GCP) and stored on Firebase.<br/>
+A Twilio API sends the SMS if the readings of the sensors goes beyond a threshold.<br/>
+A Debian OS is mounted on the Dragonboard.<br/>
+A Node.js application receives the location data from a python API and sends it to Google Cloud Platform.<br/>
+The sensors on Arduino are present to detect any damages done to the box( mounted on bike and the dragonboard is present inside this box.<br/>
+For specific merchant analysis we also use the data from https://www.divvybikes.com/system-data along with our sensors data.<br/>
 ![Architecture Diagram](https://github.com/harsh543/IoT-Bikes/blob/master/images/Arch.png "Architecture Diagram")
 
 # Challenges we ran into<br>
