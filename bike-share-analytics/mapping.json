@@ -39,6 +39,15 @@
         "from_station_id": {
           "type": "long"
         },
+        "vibration": {
+          "type": "keyword"
+        },
+        "temperature": {
+          "type": "keyword"
+        },
+        "light": {
+          "type": "keyword"
+        },
         "from_station_name": {
           "type": "text",
           "fields": {
