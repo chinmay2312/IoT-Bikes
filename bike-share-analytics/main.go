@@ -33,7 +33,11 @@ type Geo struct {
 	Lat string `json:"lat"`
 	Lon string `json:"lon"`
 }
-
+type Sensors struct {
+	Vibration string `json:"vibration"`
+	Temperature string `json:"temperature"`
+	Light string `json:"light"`
+}
 type Trip struct {
 	ID                           int64   `json:"id"`
 	StartTime                    string  `json:"start_time"`
@@ -457,6 +461,10 @@ func main() {
 					Lat: station.Latitude,
 					Lon: station.Longitude,
 				}
+				sensors := Sensors{}
+				sensors.Temperature="28"
+				sensors.Vibration="200"
+				sensors.Light="69"
 				trip.FromStationGeo = geo
 				fromStationLat = station.Latitude
 				fromStationLng = station.Longitude
